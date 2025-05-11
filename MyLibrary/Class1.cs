@@ -19,6 +19,8 @@ namespace MyLibrary
             File.AppendAllText("debug.log", $"Результат: {result}\n");
 
             return result;
+        
+              
         }
     }
 }
