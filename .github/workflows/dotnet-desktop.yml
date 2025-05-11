@@ -92,3 +92,21 @@ git cherry-pick 4437b30^..master
 git checkout thirt
 git rebase --onto master 6c1aad3
 
+Dockerfile:
+
+# Используем официальный образ
+Python FROM python:3.9-slim
+# Устанавливаем рабочую директорию в контейнере
+WORKDIR /app
+# Копируем текущую директорию в контейнер
+COPY . .
+# Команда для запуска приложения
+CMD ["python", "app.py"]
+
+docker build -t my-python-app .
+Здесь:
+
+-t my-python-app — задаёт имя образа.
+. — указывает, что Dockerfile находится в текущей директории.
+
+docker run my-python-app
