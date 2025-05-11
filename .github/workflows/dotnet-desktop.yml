@@ -76,3 +76,19 @@ jobs:
     - name: Тесты
       run: dotnet test
 
+          var obj = new Class1();
+            int result = obj.Factorial(5);
+            Assert.Equal(120, result);
+
+            Debug.WriteLine($"Вызван Factorial с n = {n}");
+            Trace.Listeners.Add(new TextWriterTraceListener("log.txt"));
+
+            git checkout -b name
+            git log --oneline --graph --decorate --all
+
+            git checkout thirt
+git cherry-pick 4437b30^..master
+
+git checkout thirt
+git rebase --onto master 6c1aad3
+
